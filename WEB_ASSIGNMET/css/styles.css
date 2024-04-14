@@ -1,0 +1,1227 @@
+/* This website template was created by Author: Kingsley Ozioko 
+Date: 29 March, 2024 
+File Name: styles.css 
+ */
+
+/* Responsive styles for larger screens (desktop) */
+/* Desktop */
+
+/* Global styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+.announcements,
+.container,
+nav,
+main,
+section,
+article * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f6e7e7;
+}
+
+/* Header styles */
+#logo {
+    color: #fff;
+    float: left;
+    border-radius: 15px 0 15px 0;
+    background-color: #008000;
+    padding: 5px;
+    margin: 0.8em;
+    opacity: 1;
+}
+
+nav {
+    width: 100%;
+    padding: 2em;
+}
+
+marquee {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgb(115, 140, 133);
+}
+
+#marq {
+    color: #d3e3e3;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+header h2 {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 7%;
+}
+
+header a {
+    z-index: 11;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #eaf0ea;
+    text-shadow: 2px 2px 2px #000;
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo:hover,
+button:hover {
+    color: #000;
+    opacity: 1;
+    background-color: #ccc;
+}
+
+a:hover {
+    color: tomato;
+    opacity: 1;
+}
+
+/* mobile nav */
+#ham {
+    color: #a77a33;
+}
+
+.container,
+.hamburger,
+.h11,
+.navbar_mobile {
+    z-index: 99;
+    display: none;
+}
+
+.h11 h1 {
+    text-align: center;
+    position: absolute;
+    right: 25%;
+    top: 40%;
+    font-size: 5em;
+    color: #633200;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar_mobile {
+    background-color: #333;
+    width: 25%;
+    height: 100vh;
+    display: none;
+}
+
+.navbar_mobile ul {
+    overflow: hidden;
+    list-style-type: none;
+    padding-top: 50%;
+    margin: 0;
+}
+
+.navbar_mobile li {
+    display: block;
+    margin: 0;
+    padding: 5% 50px;
+    width: 100%;
+}
+
+.navbar_mobile li:hover {
+    cursor: pointer;
+}
+
+
+.navbar_mobile li a {
+    color: #d3e3e3;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6em;
+    transition: all .5s;
+}
+
+.navbar_mobile li:hover {
+    cursor: pointer;
+    background-color: #ce3939;
+    letter-spacing: 10px;
+}
+
+.hamburger {
+    margin: 1em;
+    padding: 0;
+    float: left;
+    transition: opacity .3s;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.hamburger .line {
+    width: 50px;
+    height: 5px;
+    background: rgb(236, 66, 66);
+    margin: 8px auto;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.hamburger .line:nth-child(1) {
+    background-color: tomato;
+}
+
+.hamburger .line:nth-child(2) {
+    background-color: #008000;
+}
+
+.hamburger .line:nth-child(3) {
+    background-color: tomato;
+}
+
+.hamburger.isactive .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.isactive .line:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.isactive .line:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+.navbar_mobile {
+    transition: all 2s ease-in-out;
+}
+
+.navbar_mobile.active {
+    display: block;
+    animation: fade .5s;
+}
+
+@keyframes fade {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* mobile nav */
+
+/* Appointment form styles */
+.appointment_form {
+    margin: 2em 10em;
+    box-shadow: 2px 4px 6px #666;
+    width: 75%;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+    border-radius: 15px;
+}
+
+.appointment_form_input select,
+.appointment_form_input input {
+    padding: 0.8em 1.5em;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.appointment_form_input input[type="date"] {
+    padding: 0.8em 0.3em;
+
+}
+
+.appointment_form_input input[type="submit"] {
+    text-align: center;
+    width: 100%;
+    padding: 0.8em 4.5em;
+    margin: 1.8em 2em;
+    color: #fff;
+    background-color: #008000;
+}
+
+.appointment_form_input input[type="submit"]:hover {
+    background-color: rgb(61, 213, 83);
+    color: #000;
+}
+
+.appointment_form_input div {
+    float: left;
+    margin: 1em 2em;
+}
+
+.appointment_form_input option {
+    width: max-content;
+}
+
+/* form submitted page */
+.success-message {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.success-message h1 {
+    color: #008000;
+}
+
+.success-message p {
+    margin-bottom: 20px;
+}
+
+.success-message a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.success-message a:hover {
+    background-color: #005700;
+}
+
+
+/* Header section styles */
+#header_home,
+#header_about,
+#header_services,
+#header_contacts {
+    background-color: #f0e6e6;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    opacity: 0.9;
+}
+
+/* Header background images */
+#header_home {
+    background-image: url('../images/images/AdobeStock_277739918.jpeg');
+    background-position: center center;
+    height: 10%;
+}
+
+#header_about {
+    background-image: url('../images/images/AdobeStock_481854589.jpeg');
+    background-position: center left;
+}
+
+#header_services {
+    background-image: url('../images/images/AdobeStock_380604952.jpeg');
+    background-position: center center;
+
+}
+
+#header_contacts {
+    background-image: url('../images/images/AdobeStock_357270385.jpeg');
+    background-position: center center;
+}
+
+header h1 {
+    margin-top: 2em;
+    color: #000;
+    text-shadow: 2px 2px 6px #fff;
+    font-weight: 900;
+}
+
+
+header p {
+    text-shadow: 5px 5px 15px #3fbc7c;
+    color: rgb(21, 37, 87);
+    background-color: rgba(1, 2, 2, 0.1);
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-size: 2em;
+    margin: auto;
+}
+
+/* Hero section styles */
+#hero img {
+    margin-bottom: 2em;
+    width: 100%;
+    z-index: -1;
+    background-position: center right;
+    filter: sepia();
+}
+
+#active a {
+    color: tomato;
+    padding: 5px;
+}
+
+main {
+    font-size: 1.25em;
+}
+
+/* Section styles */
+.intro,
+.services {
+    padding: 2em;
+    margin: 2em;
+    clear: both;
+}
+
+.articles {
+    margin: 2em;
+}
+
+#intro_image {
+    width: 35%;
+    height: auto;
+    box-shadow: 2px 2px 6px #aaa;
+    border-radius: 115px 5px 15px 5px;
+    background-blend-mode: luminosity;
+    padding: 10px;
+}
+
+#intro_para {
+    float: left;
+    width: 60%;
+    padding: 1em 1em 1em 0;
+}
+
+#img2 {
+    margin-bottom: 3em;
+    padding: 10px;
+    height: auto;
+    width: 40%;
+    box-shadow: 2px 2px 6px #aaa;
+    border-radius: 15px 115px 5px 5px;
+    float: left;
+    margin-right: 2.5em;
+}
+
+.intro_para2 {
+    margin: 2em 0 2em 0;
+}
+
+.announcements {
+    clear: both;
+    width: 100%;
+    margin-top: 1em;
+    padding: 5em;
+    text-align: center;
+    background-color: rgba(131, 245, 245, 0.8);
+    line-height: 2em;
+    color: #000;
+    font-weight: 800;
+    text-shadow: 2px 3px 3px #75f3c1;
+}
+
+.qoute_sign {
+    clear: both;
+    font-family: "Whisper", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 5em;
+}
+
+/* Article styles */
+article h2 {
+    margin-bottom: 1em;
+}
+
+article i {
+    opacity: 0.8;
+}
+
+.articles_items {
+    box-shadow: 2px 4px 6px #ccc;
+    width: 100%;
+    height: 700px;
+    margin: 0 2.5em 2.5em 0;
+}
+
+.articles_items_about {
+    box-shadow: 2px 4px 6px #ccc;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 2em;
+}
+
+.articles_content img {
+    width: 100%;
+    height: 250px;
+}
+
+.articles_items small {
+    opacity: 0.8;
+}
+
+.articles_content div {
+    float: left;
+    width: 45%;
+}
+
+.articles_items p {
+    height: 250px;
+    font-size: smaller;
+    opacity: 0.8;
+    padding: 1em;
+}
+
+.articles_items_about p {
+    font-size: smaller;
+    opacity: 0.8;
+    padding: 2em;
+}
+
+#learn_more {
+    font-size: smaller;
+    color: rgb(79, 111, 198);
+}
+
+#learn_more:hover {
+    color: tomato;
+}
+
+/* About us styling */
+.about {
+    margin: 5em;
+}
+
+.about_img {
+    width: 100%;
+    height: 400px;
+    opacity: 0.8;
+}
+
+.annual_para {
+    margin: 2em 5em;
+}
+
+.about h2,
+.annual_para h3 {
+    margin-bottom: 1em;
+}
+
+.annual_para ul {
+    padding: 2em 1em;
+}
+
+.annual_para ul li {
+    margin-bottom: 1em;
+}
+
+/* staff section */
+
+.staff,
+.about_staff_para {
+    margin: 2em 5em;
+    clear: both;
+}
+
+.staff h2 {
+    margin-bottom: 3%;
+}
+
+.staff h3 {
+    margin-bottom: 3%;
+    font-size: smaller;
+}
+
+.staff div {
+    float: left;
+    width: 22%;
+    margin: 0.5em;
+}
+
+.staff-member {
+    margin-bottom: 30px;
+    box-shadow: 2px 4px 6px #ccc;
+}
+
+.staff-member h3 {
+    color: #333;
+}
+
+.staff-member p {
+    font-size: 0.8em;
+    color: #666;
+    padding: 5px;
+    height: fit-content;
+}
+
+.staff-member img {
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 2px 4px 6px #666;
+}
+
+/* Services Styling */
+.services h3,
+.services p {
+    margin: 2em;
+}
+
+#services_booking a {
+    background-color: #008000;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+.services i {
+    margin-bottom: 2em;
+    display: block;
+}
+
+.service_card h3 {
+    margin-top: 1em;
+}
+
+.services div {
+    float: left;
+    width: 45%;
+    margin-left: 1em;
+    height: 500px;
+    box-shadow: 2px 4px 6px #666;
+}
+
+.services p {
+    font-size: smaller;
+}
+
+#service_images {
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
+    opacity: 0.5;
+    margin: 1em 0 1em 0;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px
+}
+
+#services_book:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#services_book {
+    position: absolute;
+    left: 40%;
+    margin-top: 12%;
+    background-color: #008000;
+    color: #fff;
+    padding: 1em 3em;
+    border-radius: 8px;
+    z-index: 99;
+}
+
+/* Contact us styling */
+.contact-info,
+.contact-form {
+    margin: 10%;
+}
+
+.contact-info {
+    background-color: #dbc4c4;
+    padding: 15px;
+    box-shadow: 3px 3px 6px #ccc;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+.contact-info a {
+    box-shadow: 3px 3px 6px #aaa;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Contact form */
+.contact-form label {
+    display: inline-block;
+    margin-bottom: 3px;
+    width: 100%;
+    padding: 1em 2em;
+}
+
+.contact-form legend {
+    margin-left: 1em;
+}
+
+.schedule {
+    margin-left: 2em;
+}
+
+.contact-form fieldset {
+    margin-bottom: 2em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form input[type="date"] {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input_right input {
+    float: left;
+    margin: 0.4em 1.5em 1em 1.5em;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    font-size: larger;
+}
+
+.schedule_float div {
+    display: inline;
+    float: left;
+}
+
+.contact-form button {
+    background-color: #008000;
+    color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #000;
+    color: #ccc;
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    background-color: rgb(60, 188, 60);
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: rgb(61, 213, 83);
+    color: #000;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    line-height: 2em;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #666;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+#Kingsley {
+    color: tomato;
+}
+
+#love {
+    color: aqua;
+}
+
+/* =============================================== */
+
+/* Media queries for tablet and mobile views */
+@media only screen and (max-width: 768px) {
+
+    /* Adjustments for tablet screens */
+    header h2 {
+        width: 15%;
+    }
+
+    .appointment_form {
+        overflow: hidden;
+        margin: 2em;
+        box-shadow: 2px 4px 6px #666;
+        width: 92%;
+        height: 230px;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #000;
+        border-radius: 15px;
+    }
+
+    .appointment_form_input input[type="submit"] {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 3.5em;
+        padding: 0.8em 12.5em;
+        margin: 1em 5em;
+        color: #fff;
+        background-color: rgb(60, 188, 60);
+    }
+
+    .appointment_form_input div {
+        float: left;
+        margin: 1em 2.3em;
+    }
+
+    /* intro  about section */
+
+    #intro_para {
+        float: none;
+        width: 100%;
+        padding: 1em 1em 1em 0;
+    }
+
+    #img2 {
+        margin-top: 2em;
+        padding: 10px;
+        height: auto;
+        width: 100%;
+        box-shadow: 2px 2px 6px #aaa;
+        border-radius: 15px 115px 5px 5px;
+        float: none;
+        margin-right: 2.5em;
+    }
+
+
+    #intro_image {
+        width: 100%;
+        height: auto;
+        box-shadow: 2px 2px 6px #aaa;
+        border-radius: 115px 5px 15px 5px;
+        background-blend-mode: luminosity;
+        padding: 10px;
+    }
+
+    .intro_para2 {
+        margin: 1em 0;
+    }
+
+    /* article section */
+    .articles_content div {
+        float: none;
+        width: 100%;
+    }
+
+    .articles_items {
+        width: 100%;
+    }
+
+    .articles_items p {
+        font-size: smaller;
+        opacity: 0.8;
+        padding: 1em;
+    }
+
+    #header_about {
+        background-image: url('../images/images/AdobeStock_481854589.jpeg');
+        background-position: center left;
+        height: max-content;
+    }
+
+    /* staff */
+    .staff div {
+        float: left;
+        width: 40%;
+        margin-right: 2.7em;
+        margin-bottom: 2.7em;
+    }
+
+    .staff {
+        margin: 3em;
+    }
+
+    .staff-member p {
+        font-size: 0.8em;
+        color: #666;
+        padding: 8px;
+        height: 250px;
+    }
+
+    .staff h2 {
+        margin-bottom: 1em;
+    }
+
+
+    #services_book {
+        position: absolute;
+        left: 30%;
+        margin-top: 35%;
+        background-color: #008000;
+        color: #fff;
+        padding: 1em 3em;
+        border-radius: 8px;
+        z-index: 99;
+    }
+
+    /* services section */
+    #header_services {
+        background-image: url('../images/images/AdobeStock_380604952.jpeg');
+        background-position: center center;
+        height: max-content;
+
+    }
+
+    .services div {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #services_book {
+        left: 30%;
+        margin-top: 10%;
+    }
+
+    /* contact page */
+    #header_contacts {
+        background-image: url('../images/images/AdobeStock_357270385.jpeg');
+        background-position: center center;
+        height: max-content;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+/*================ mobile view section ===========  */
+
+@media only screen and (max-width: 480px) {
+
+    /* Adjustments for mobile screens */
+    nav #tablet_view,
+    nav marquee,
+    nav ul li {
+        display: none;
+    }
+
+    /* mobile nav */
+    .container,
+    .hamburger,
+    .h11,
+    .navbar_mobile {
+        z-index: 99;
+        display: block;
+    }
+
+    /* Style rules for hamburger menu */
+    .hamburger {
+        float: right;
+    }
+
+    .h1 h1 {
+        left: 23%;
+        top: 50%;
+        font-size: 1.4em;
+    }
+
+    .navbar_mobile {
+        background-color: #333;
+        width: 100%;
+        height: 28vh;
+        display: none;
+    }
+
+    .navbar_mobile ul {
+        overflow: hidden;
+        list-style-type: none;
+        padding-top: 3%;
+        padding-left: 30%;
+        padding-right: 3%;
+        padding-bottom: 3%;
+        margin: 0;
+    }
+
+    .navbar_mobile li {
+        display: block;
+        margin: 0;
+        padding: 14px 20px;
+        width: 100%;
+        transition: background-color .5s;
+    }
+
+    .navbar_mobile li:hover {
+        cursor: pointer;
+        background-color: #ce3939;
+    }
+
+
+    .navbar_mobile li a {
+        color: #d3e3e3;
+        text-decoration: none;
+        padding: 14px 16px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+        transition: all 1s;
+    }
+
+    .navbar_mobile li:hover {
+        cursor: pointer;
+        background-color: #ce3939;
+        letter-spacing: 0px;
+    }
+
+    /* mobile nav */
+
+    header h2 {
+        width: 10%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        color: #fff;
+    }
+
+    .header_about {
+        margin-bottom: 2em;
+    }
+
+    /* appointment form */
+
+    .appointment_form {
+        overflow: hidden;
+        margin: 1.5em 1em;
+        width: 90%;
+        padding: 1em;
+        height: auto;
+        color: #000;
+        border-radius: 15px;
+    }
+
+
+    .appointment_form_input input[type="submit"] {
+        text-align: center;
+        display: block;
+        color: #ffffff;
+        margin: 1em;
+        padding: 1em;
+        background-color: rgb(60, 188, 60);
+    }
+
+
+    .appointment_form_input div {
+        float: none;
+        margin: 1em;
+    }
+
+    /* hero image */
+    #hero img {
+        display: none;
+    }
+
+    main {
+        font-size: medium;
+    }
+
+    /* intro para */
+
+    #intro_para {
+        float: none;
+        width: 100%;
+        padding: 1em 1em 1em 0;
+    }
+
+    #img2 {
+        margin-top: 2em;
+        padding: 10px;
+        height: auto;
+        width: 100%;
+        box-shadow: 2px 2px 6px #aaa;
+        border-radius: 15px 115px 5px 5px;
+        float: none;
+        margin-right: 2.5em;
+    }
+
+    .intro_para2 {
+        margin: 2em 0 1em 0;
+    }
+
+    #header_about {
+        background-image: url('../images/images/AdobeStock_481854589.jpeg');
+        background-position: center left;
+        height: max-content;
+    }
+
+    /* article section */
+    .articles_content div {
+        float: none;
+        width: 100%;
+    }
+
+    .articles_items {
+        width: 100%;
+    }
+
+    .articles_items p {
+        font-size: smaller;
+        opacity: 0.8;
+        padding: 1em;
+    }
+
+    /* staff */
+    .staff div {
+        float: none;
+        width: 100%;
+    }
+
+    .staff {
+        margin: 3em;
+    }
+
+    .staff-member p {
+        font-size: 0.8em;
+        color: #666;
+        padding: 5px;
+        height: fit-content;
+    }
+
+    .staff h2 {
+        margin-bottom: 1em;
+    }
+
+
+    #services_book {
+        position: absolute;
+        left: 30%;
+        margin-top: 35%;
+        background-color: #008000;
+        color: #fff;
+        padding: 1em 3em;
+        border-radius: 8px;
+        z-index: 99;
+    }
+
+    /* about page */
+
+    .about {
+        margin: 2em;
+    }
+
+    /* services section */
+    #header_services {
+        background-image: url('../images/images/AdobeStock_380604952.jpeg');
+        background-position: center center;
+        height: max-content;
+
+    }
+
+    .services div {
+        float: none;
+        width: 100%;
+        margin-left: 1em;
+        height: 500px;
+        box-shadow: 2px 4px 6px #666;
+    }
+
+    .services h3,
+    .services p {
+        margin: 2em 1em;
+    }
+
+    .annual_para {
+        margin: 2em;
+    }
+
+    /* contact section  */
+    #header_contacts {
+        background-image: url('../images/images/AdobeStock_357270385.jpeg');
+        background-position: center center;
+        height: max-content;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"],
+    .contact-form input[type="date"] {
+        display: block;
+        width: 80%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    /* footer */
+    footer {
+        font-size: medium;
+    }
+
+    #love {
+        display: block;
+    }
+}

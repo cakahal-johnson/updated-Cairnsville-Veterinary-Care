@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--This website template was created by Kingsley Ozioko-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cairnsville Veterinary Care</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Caveat:wght@400..700&family=Whisper&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header_contacts">
+        <h2><a href="index.html" id="logo">CVC</a> </h2>
+        <!-- Mobile Nav -->
+        <div class="h11">
+            <!-- <h1>Click <span id="ham">hamburger</span> icon</h1> -->
+        </div>
+
+        <div class="container">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <menu class="navbar_mobile">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li id="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </menu>
+        </div>
+
+        <!-- Tablet navbar -->
+        <nav id="tablet_view">
+            <marquee behavior="" direction=""><span>Trading hours:</span> Monday – Friday: 8:30am - 6:30 PM, Saturday –
+                Sunday: 8:30am-1pm</marquee>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li id="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1>Contact Us</h1>
+
+    </header>
+
+    <main>
+        <section class="about_staff_para">
+            <h3>Announcements: </h3>
+            <ol>
+                <li><strong>15% discount on your pet's first visit when you book through our online booking form!
+                    </strong></li>
+                <li><strong>Join us for a Dog Play Date on Saturday 4th May 2024 , starting at 9 am*</strong></li>
+                <li>Enjoy a 10% discount on your Annual Wellness Check-Up at Cairnsville Veterinary Care during the
+                    month of April* </li>
+            </ol>
+        </section>
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>For appointments, inquiries, or any other assistance, feel free to contact us through the following
+                channels:</p>
+            <ul>
+                <li><a href="tel:+10713275599">Phone: 07 1327 5599</a></li>
+                <li>Fax: 07 4567 9999</li>
+                <li>Email: <a href="mailto:cvc@cairnsvillevetcare.com.au">cvc@cairnsvillevetcare.com.au</a></li>
+                <li>Address: 195 Fantail Street, Cairnville, Queensland</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Let's Know You More</h2>
+            <form name="myForm_contact" action="submitted.html" onsubmit="return validateForm()">
+                <fieldset>
+                    <legend>For person</legend>
+                    <label>
+                        Name
+                        <input type="text" name="name">
+                    </label>
+                    <div class="two-cols">
+                        <label>
+                            Email address
+                            <input type="email" name="email">
+                        </label>
+                        <label>
+                            Phone number
+                            <input type="tel" name="phone">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Appointment request</legend>
+                    <div>
+                        <label>
+                            Date
+                            <input type="date" name="Appointment request">
+                        </label>
+                    </div>
+
+                    <p class="schedule"> Schedule Section: </p>
+                    <div class="schedule_float">
+                        <div class="input_right">
+                            Morning
+                            <input type="radio" name="schedule">
+                        </div>
+                        <div class="input_right">
+                            Afternoon
+                            <input type="radio" name="schedule">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmation requested by:</legend>
+                    <div>
+                        <div class="schedule_float">
+                            <div class="input_right">
+                                Email
+                                <input type="checkbox" name="confirmation">
+                            </div>
+                            <div class="input_right">
+                                Phone Call
+                                <input type="checkbox" name="confirmation2">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <label>
+                    <input type="checkbox">
+                    <span>I agree to the processing of my data for the handling of my request by <a href="#"
+                            target="_blank">Cairnville</a>.</span>
+                </label>
+                <div class="btns">
+                    <input type="submit" value="Submit request">
+                </div>
+            </form>
+
+        </section>
+    </main>
+
+    <a href="index.html"><span id="services_book">Thanks | Home</span></a>
+    <img id="service_images" src="images/images/AdobeStock_139121490.jpeg" alt="">
+
+    <footer>
+        <p>Contact Us:</p>
+        <ul>
+            <li><a href="tel:+10713275599">Phone: 07 1327 5599</a></li>
+            <li>Fax: 07 4567 9999</li>
+            <li>Address: 195 Fantail Street, Cairnville, Queensland</li>
+            <li>Email: <a href="mailto:cvc@cairnsvillevetcare.com.au">cvc@cairnsvillevetcare.com.au</a></li>
+        </ul>
+        <p>Trading hours: Monday – Friday: 8:30am - 6:30 PM, Saturday – Sunday: 8:30am-1pm</p>
+        <p>This website template was created by <span id="love">&#10084;</span> <span id="Kingsley">Kingsley
+                Ozioko</span> &copy; 2024 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

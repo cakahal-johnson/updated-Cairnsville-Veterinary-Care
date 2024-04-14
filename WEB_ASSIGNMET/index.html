@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--This website template was created by Kingsley Ozioko-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cairnsville Veterinary Care</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Caveat:wght@400..700&family=Whisper&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header_home">
+        <h2><a href="index.html" id="logo">CVC</a></h2>
+
+        <!-- Mobile Nav -->
+        <div class="h11">
+            <!-- <h1>Click <span id="ham">hamburger</span> icon</h1> -->
+        </div>
+
+        <div class="container">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <menu class="navbar_mobile">
+                <ul>
+                    <li id="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </menu>
+        </div>
+
+        <!-- Tablet navbar -->
+        <nav id="tablet_view">
+            <marquee id="marquee" behavior="" direction=""><span>Trading hours:</span> Monday – Friday: 8:30am - 6:30
+                PM, Saturday –
+                Sunday: 8:30am-1pm</marquee>
+            <ul>
+                <li id="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Cairnsville Veterinary Care</h1>
+        <p>"Our unwavering dedication is to provide the best possible care for our customers' pets." </p>
+
+    </header>
+
+    <section class="appointment_form">
+        <form name="myForm" action="submitted.html" onsubmit="return validateForm_btn()">
+            <div class="appointment_form_input">
+                <div>
+                    <p>Appointment</p>
+                    <select name="appointment">
+                        <option value=""></option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Nurse">Nurse</option>
+                        <option value="Consultant">Consultant</option>
+                        <option value="Surgeon">Surgeon</option>
+                        <option value="Radiographer">Radiographer</option>
+                    </select> <br>
+                    <small>Who would you like to book?</small>
+                </div>
+
+                <div>
+                    <p>Pet</p>
+                    <select name="pet">
+                        <option value=""></option>
+                        <option value="Birds">Birds</option>
+                        <option value="Dogs">Dogs</option>
+                        <option value="Cats">Cats</option>
+                        <option value="Reptiles">Reptiles</option>
+                        <option value="Amphibians">Amphibians</option>
+                        <option value="Aquatic">Aquatic</option>
+                    </select> <br>
+                    <small>Which pet are you booking?</small>
+                </div>
+                <div>
+                    <p>Date</p>
+                    <input type="date" name="date"> <br>
+
+                    <small>When would you like to book?</small>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- Hero Image -->
+    <div id="hero">
+        <img src="images/images/AdobeStock_308338875.jpeg" alt="People holding a pet">
+    </div>
+
+
+    <main>
+        <section class="intro">
+            <h2>About Our Clinic</h2>
+            <div>
+                <p id="intro_para">As a modern family-run local business proudly located at 195 Fantail St. in
+                    Cairnsville for over three decades, our roots in the community run deep. Our unwavering dedication
+                    is to provide the best possible care for our customers' pets. With over 20 years of experience in
+                    veterinary care, we pride ourselves on offering friendly, reliable, and compassionate services. As a
+                    modern family-run local business proudly located at 195 Fantail St. in Cairnsville for over three
+                    decades, our roots in the community run deep. Our unwavering dedication is to provide the best
+                    possible care for our customers' pets. With over 20 years of experience in veterinary care, we pride
+                    ourselves on offering friendly, reliable, and compassionate services.</p>
+                <img id="intro_image" src="images/images/AdobeStock_271588671.jpeg" alt="man check-ups pet">
+            </div>
+
+            <div>
+                <img id="img2" src="images/images/AdobeStock_273440578.jpeg" alt="man check-ups pet">
+
+                <h2 class="intro_para2">Our Services</h2>
+                <ul>
+                    <li>Routine wellness check-ups and vaccinations</li>
+                    <li>Dental care</li>
+                    <li>Spaying/neutering</li>
+                    <li>Microchipping</li>
+                </ul> <br>
+                <p>Explore our comprehensive range of veterinary services tailored to meet the diverse needs of your
+                    furry
+                    companions.</p>
+            </div>
+
+        </section>
+
+
+        <section class="announcements" id="announcements">
+            <span class="qoute_sign">''</span>
+            <h2>Announcements</h2>
+            <p>Take advantage of our special offers:</p>
+            <p>15% discount on your pet's first visit when you book through email!</p>
+            <p>Enjoy a 10% discount on your Annual Wellness Check-Up at Cairnsville Veterinary Care</p>
+
+        </section>
+
+
+        <article class="articles">
+            <h2>Articles of Interest</h2>
+
+            <div class="articles_content">
+                <div class="articles_items article_one">
+                    <a target="_blank"
+                        href="https://animalmedicinesaustralia.org.au/report/pets-in-australia-a-national-survey-of-pets-and-people">Pets
+                        in Australia: A National Survey of Pets</a> <br>
+
+                    <picture>
+                        <img src="images/Stock-Photos/AdobeStock_643810994.jpeg" alt="doctor with pet">
+                        <small>22 OCTOBER 2019</small> <br>
+                        <caption>Pets in Australia: a national survey of pets and people</caption>
+                    </picture>
+
+                    <p>Our pets play multiple, varied and important roles in our lives. They are companions for
+                        relaxation, for physical activity or for teaching our children responsibility. They provide
+                        humour, fun and a sense of purpose. As assistance animals they help visually impaired people
+                        maintain independent, fulfilling lives and assist the ill and elderly manage anxiety and pain.
+                        Companion animals also play an important role in treatment of mental health, particularly for
+                        returned soldiers and first responders. Assistance dogs provide support and help to rebuild
+                        trust and connections with family and the wider community. <a target="_blank"
+                            href="https://animalmedicinesaustralia.org.au/report/pets-in-australia-a-national-survey-of-pets-and-people/">Read
+                            more >>></a></p>
+
+                    <div>
+
+                    </div>
+                </div>
+
+
+                <div class="articles_items article_two">
+                    <a target="_blank" href="https://www.rspca.org.au/blog/2022/why-it-so-important-desex-your-pet">Why
+                        It's
+                        So Important to Desex Your Pet</a>
+
+                    <picture>
+                        <img src="images/images/AdobeStock_593569730.jpeg" alt="old man with pet" alt="doctor with pet">
+                        <small>17 November 2022</small> <br>
+                        <caption>Why is it so important to desex your pet?</caption>
+                    </picture>
+
+                    <p>Responsible pet ownership means making choices that help you and your companion animal (pet) have
+                        a safe and happy life. Desexing is a very important part of this and it is crucial to understand
+                        the role that desexing plays for the health, safety and protection of your companion animal.
+                        <br> Desexing animals not only helps to prevent unwanted pregnancies – meaning fewer unwanted
+                        animals - but also research shows that desexed animals can actually live longer and healthier
+                        lives. Desexing can reduce the risk of certain diseases and behavioural issues, benefiting your
+                        animal’s health and welfare. <a target="_blank"
+                            href="https://www.rspca.org.au/latest-news/blog/why-it-so-important-desex-your-pet/">Read
+                            more >>></a>
+                    </p>
+
+                </div>
+
+
+                <div class="articles_items article_three">
+                    <a target="_blank" href="https://www.rspca.org.au/blog/2022/4-ways-keep-your-dog-cool-summer">4 Ways
+                        to
+                        Keep Your Dog Cool in Summer</a>
+
+                    <picture>
+                        <img src="images/images/AdobeStock_170844396.jpeg" alt="summer dog" alt="doctor with pet">
+                        <small>7 December 2022</small> <br>
+                        <caption>4 ways to keep your dog cool this summer</caption>
+                    </picture>
+
+                    <p>Now that summer is here and the temperatures are climbing in many parts of the country, it’s
+                        important to protect your dog from the heat, as exposure to high temperatures can lead to heat
+                        exhaustion and life threatening heatstroke. <br> Like in humans, heatstroke occurs when an
+                        animal’s body temperature becomes elevated above the normal range due to exposure to excessively
+                        high temperatures, to the point where their body’s temperature-regulating mechanism fails and
+                        they can’t maintain a healthy temperature. It’s a very serious condition that can cause organ
+                        failure or death. Some animals are at higher risk of overheating and severe consequences such
+                        as... <a target="_blank"
+                            href="https://www.rspca.org.au/latest-news/blog/why-it-so-important-desex-your-pet/">Read
+                            more >>></a></p>
+                </div>
+
+
+                <div class="articles_items article_four">
+                    <a target="_blank" href="https://www.petstock.com.au/blogs/article/first-pet-bird-guide">First Pet
+                        Bird
+                        Guide anytime anywhere</a>
+
+                    <picture>
+                        <img src="images/Stock-Photos/AdobeStock_204658793.jpeg" alt="lady man with pet"
+                            alt="doctor with pet">
+                        <small>September 2022</small> <br>
+                        <caption>First Pet Bird Guide</caption> <br>
+                    </picture>
+
+                    <p>Getting a pet bird soon? To enjoy all the benefits of owning a bird, it is vital you take these
+                        steps to ensure they have a great home life with you. From what to feed your bird, to types of
+                        bird cages and bird toys – PetSmarts has the answers. <br> <br>
+                        <i>Should I Get A Pet Bird?</i> <br> <br>
+                        Birds make for entertaining and engaging pets – they’re smart, social and tend to have an array
+                        of charming quirks and kinks – but before you bring one home you need to consider if it’s the
+                        right pet for your household. <a
+                            href="https://www.petstock.com.au/blog/articles/first-pet-bird-guide">Read more>>></a>
+                    </p>
+
+                </div>
+            </div>
+
+
+        </article>
+    </main>
+
+
+    <a href="contact.html"><span id="services_book">Book Now</span></a>
+    <img id="service_images" src="images/images/AdobeStock_606163046.jpeg" alt="">
+
+
+    <footer>
+        <p>Contact Us:</p>
+        <ul>
+            <li><a href="tel:+10713275599">Phone: 07 1327 5599</a></li>
+            <li>Fax: 07 4567 9999</li>
+            <li>Address: 195 Fantail Street, Cairnville, Queensland</li>
+            <li>Email: <a href="mailto:cvc@cairnsvillevetcare.com.au">cvc@cairnsvillevetcare.com.au</a></li>
+        </ul>
+        <p>Trading hours: Monday – Friday: 8:30am - 6:30 PM, Saturday – Sunday: 8:30am-1pm</p>
+        <p>This website template was created by <span id="love">&#10084;</span> <span id="Kingsley">Kingsley
+                Ozioko</span> &copy; 2024 </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
